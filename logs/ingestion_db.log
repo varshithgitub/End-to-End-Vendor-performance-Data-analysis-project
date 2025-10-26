@@ -1,0 +1,508 @@
+2025-09-25 17:19:22,025 - INFO - Ingestion in progress for begin_inventory.csv in DB
+2025-09-25 17:19:23,877 - INFO - Ingestion in progress for end_inventory.csv in DB
+2025-09-25 17:19:30,037 - INFO - Ingestion in progress for purchases.csv in DB
+2025-09-25 17:20:00,797 - INFO - Ingestion in progress for purchase_prices.csv in DB
+2025-09-25 17:29:19,138 - INFO - Ingestion in progress for begin_inventory.csv in DB
+2025-09-25 17:29:21,472 - INFO - Ingestion in progress for end_inventory.csv in DB
+2025-09-25 17:29:28,218 - INFO - Ingestion in progress for purchases.csv in DB
+2025-09-25 17:39:29,486 - INFO - Ingestion in progress for purchase_prices.csv in DB
+2025-09-25 17:39:44,272 - INFO - Ingestion in progress for begin_inventory.csv in DB
+2025-09-25 17:39:45,931 - INFO - Ingestion in progress for end_inventory.csv in DB
+2025-09-25 17:39:52,067 - INFO - Ingestion in progress for purchases.csv in DB
+2025-09-25 17:40:24,075 - INFO - Ingestion in progress for purchase_prices.csv in DB
+2025-09-25 17:41:52,396 - INFO - Ingestion in progress for begin_inventory.csv in DB
+2025-09-25 17:41:54,167 - INFO - Ingestion in progress for end_inventory.csv in DB
+2025-09-25 17:42:00,367 - INFO - Ingestion in progress for purchases.csv in DB
+2025-09-25 17:42:30,346 - INFO - Ingestion in progress for purchase_prices.csv in DB
+2025-09-25 17:42:46,965 - INFO - Ingestion in progress for sales.csv in DB
+2025-09-25 17:46:44,298 - INFO - Ingestion in progress for vendor_invoice.csv in DB
+2025-09-25 17:46:44,427 - INFO - Ingestion success !!! Total time take is 4.871053218841553 minutes
+2025-09-25 17:53:41,024 - ERROR - No such comm target registered: jupyter.widget.control
+2025-09-25 17:53:41,026 - WARNING - No such comm: e494751d-532b-4d40-a673-8a6bc18cd3bc
+2025-09-25 17:53:41,026 - DEBUG - Current comms: []
+2025-10-04 15:37:39,555 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 15:37:39,561 - WARNING - No such comm: 16c60ef3-e02e-4942-9e7a-6a124aca94bc
+2025-10-04 15:37:39,561 - DEBUG - Current comms: []
+2025-10-04 15:39:53,379 - INFO - Creating Vendor Summary Table.....
+2025-10-04 15:40:17,258 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750                 145080   
+1          23.19        28.99   1750                 164038   
+2          18.24        24.99   1750                 187407   
+3          16.17        22.99   1750                 201682   
+4          21.89        29.99   1750                 138109   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0        672819.31       260999.20     68601.68  
+1        561512.37       294438.66    144929.24  
+2        461140.15       343854.07    123780.22  
+3        420050.01       368242.80    257032.07  
+4        545778.28       249587.83    257032.07  
+2025-10-04 15:40:17,263 - INFO - Cleaning Data.....
+2025-10-04 15:40:17,270 - INFO -    VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          26.27        36.99  1750.0                 145080   
+1          23.19        28.99  1750.0                 164038   
+2          18.24        24.99  1750.0                 187407   
+3          16.17        22.99  1750.0                 201682   
+4          21.89        29.99  1750.0                 138109   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0        672819.31       260999.20     68601.68  
+1        561512.37       294438.66    144929.24  
+2        461140.15       343854.07    123780.22  
+3        420050.01       368242.80    257032.07  
+4        545778.28       249587.83    257032.07  
+2025-10-04 15:40:17,273 - INFO - Ingesting data.....
+2025-10-04 15:40:17,328 - INFO - Completed
+2025-10-04 15:55:20,055 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 15:55:20,057 - WARNING - No such comm: e91dac8d-7095-4d9f-be6d-0675f201affb
+2025-10-04 15:55:20,057 - DEBUG - Current comms: []
+2025-10-04 15:55:32,072 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 15:55:32,074 - WARNING - No such comm: 20567521-6001-416a-85a6-1a87bc951cf0
+2025-10-04 15:55:32,075 - DEBUG - Current comms: []
+2025-10-04 16:02:26,117 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 16:02:26,119 - WARNING - No such comm: 0e9abe66-0533-43f0-a0ce-4ca83eeaac22
+2025-10-04 16:02:26,119 - DEBUG - Current comms: []
+2025-10-04 16:02:26,159 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 16:02:26,162 - WARNING - No such comm: b9bac7c7-c354-4e95-a737-5a7a1be88ac7
+2025-10-04 16:02:26,162 - DEBUG - Current comms: []
+2025-10-04 21:36:32,343 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 21:36:32,347 - WARNING - No such comm: e02b5a9c-f66b-4bbc-b074-5960c0bf5a02
+2025-10-04 21:36:32,347 - DEBUG - Current comms: []
+2025-10-04 21:36:32,461 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 21:36:32,464 - WARNING - No such comm: 3e35caf6-08c1-4db9-ac8d-f04fdb660c1c
+2025-10-04 21:36:32,464 - DEBUG - Current comms: []
+2025-10-04 21:57:55,068 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 21:57:55,070 - WARNING - No such comm: 4c8a96e4-c04e-49b0-bd5e-fdcc4ebf1d6b
+2025-10-04 21:57:55,070 - DEBUG - Current comms: []
+2025-10-04 21:57:56,062 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 21:57:56,065 - WARNING - No such comm: 596d9edd-6b56-464e-9169-4676c3d4d0c1
+2025-10-04 21:57:56,065 - DEBUG - Current comms: []
+2025-10-04 23:10:42,061 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 23:10:42,063 - WARNING - No such comm: eae30852-d4f9-4e07-9db1-27f356ee8e69
+2025-10-04 23:10:42,064 - DEBUG - Current comms: []
+2025-10-04 23:10:42,104 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-04 23:10:42,107 - WARNING - No such comm: 46a86214-797d-40d0-bb97-d6be5fb16e5d
+2025-10-04 23:10:42,107 - DEBUG - Current comms: []
+2025-10-05 04:38:22,598 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 04:38:22,603 - WARNING - No such comm: 6d4fbd1a-ecc8-44f6-80d6-33e594670438
+2025-10-05 04:38:22,603 - DEBUG - Current comms: []
+2025-10-05 04:38:22,608 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 04:38:22,611 - WARNING - No such comm: 2dba6dde-ee6e-4a79-b121-68b0d5a9f898
+2025-10-05 04:38:22,612 - DEBUG - Current comms: []
+2025-10-05 08:35:04,307 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 08:35:04,311 - WARNING - No such comm: 13d4abc7-3d38-4185-bf7e-3ffad0db4f30
+2025-10-05 08:35:04,311 - DEBUG - Current comms: []
+2025-10-05 08:35:04,353 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 08:35:04,356 - WARNING - No such comm: 19fab6f6-c079-424b-b034-de9ee06dc2cc
+2025-10-05 08:35:04,356 - DEBUG - Current comms: []
+2025-10-05 08:36:08,274 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 08:36:08,276 - WARNING - No such comm: caef98fa-3154-4278-b47f-8e349f36dd1d
+2025-10-05 08:36:08,276 - DEBUG - Current comms: []
+2025-10-05 08:36:12,268 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 08:36:12,270 - WARNING - No such comm: e7a0e482-8eed-45ca-a493-724a99a6e07b
+2025-10-05 08:36:12,270 - DEBUG - Current comms: []
+2025-10-05 20:27:27,514 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 20:27:27,517 - WARNING - No such comm: 0f72e884-7fac-4855-8530-7fb3766cacf9
+2025-10-05 20:27:27,517 - DEBUG - Current comms: []
+2025-10-05 20:27:27,598 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-05 20:27:27,601 - WARNING - No such comm: 4e8adc2b-5122-469b-ad27-c98f1aec979b
+2025-10-05 20:27:27,601 - DEBUG - Current comms: []
+2025-10-06 04:02:15,723 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 04:02:15,727 - WARNING - No such comm: 519af6b4-7108-478b-b0ad-7eb58e93fe18
+2025-10-06 04:02:15,727 - DEBUG - Current comms: []
+2025-10-06 04:02:16,287 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 04:02:16,291 - WARNING - No such comm: f58ba3d7-27f9-46f1-a8dd-055d4cefc13e
+2025-10-06 04:02:16,291 - DEBUG - Current comms: []
+2025-10-06 04:13:46,243 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 04:13:46,245 - WARNING - No such comm: 95f81c99-a29a-4cd3-b8be-00705ac3c7fe
+2025-10-06 04:13:46,246 - DEBUG - Current comms: []
+2025-10-06 04:13:49,630 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 04:13:49,632 - WARNING - No such comm: 51e47856-55b9-450d-8c03-964a1e98f8e2
+2025-10-06 04:13:49,632 - DEBUG - Current comms: []
+2025-10-06 18:10:21,144 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 18:10:21,147 - WARNING - No such comm: bb6bebe5-c9e0-4b13-9955-ae2ef5a6d74c
+2025-10-06 18:10:21,148 - DEBUG - Current comms: []
+2025-10-06 18:10:21,158 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 18:10:21,161 - WARNING - No such comm: 65637803-4b93-4102-ab65-bdb8cba7e067
+2025-10-06 18:10:21,161 - DEBUG - Current comms: []
+2025-10-06 18:11:25,255 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 18:11:25,256 - WARNING - No such comm: dc083bec-7bae-4e12-b46b-84e1fd4d110b
+2025-10-06 18:11:25,256 - DEBUG - Current comms: []
+2025-10-06 18:11:36,263 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 18:11:36,265 - WARNING - No such comm: 8824a02a-aa51-4d64-8be4-0045aea0bc35
+2025-10-06 18:11:36,266 - DEBUG - Current comms: []
+2025-10-06 18:59:11,289 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 18:59:11,292 - WARNING - No such comm: 39236e4d-7a3d-4d58-a5ef-a5028075cc7f
+2025-10-06 18:59:11,292 - DEBUG - Current comms: []
+2025-10-06 18:59:28,271 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 18:59:28,273 - WARNING - No such comm: 2b72b962-10ae-4c9c-9918-d3c138274cab
+2025-10-06 18:59:28,273 - DEBUG - Current comms: []
+2025-10-06 20:24:40,961 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 20:24:40,964 - WARNING - No such comm: a499695e-f306-47e4-8d80-e7207e5a1471
+2025-10-06 20:24:40,964 - DEBUG - Current comms: []
+2025-10-06 20:24:40,972 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-06 20:24:40,975 - WARNING - No such comm: 977e0b6b-e835-4272-b9a6-e4399fd18414
+2025-10-06 20:24:40,975 - DEBUG - Current comms: []
+2025-10-07 03:24:45,301 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 03:24:45,304 - WARNING - No such comm: 700516d9-1a02-4715-9ee7-e80fd2a29f99
+2025-10-07 03:24:45,304 - DEBUG - Current comms: []
+2025-10-07 03:24:45,309 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 03:24:45,312 - WARNING - No such comm: 1a4cf436-8828-4040-9a0b-abb0ec7c919b
+2025-10-07 03:24:45,312 - DEBUG - Current comms: []
+2025-10-07 04:14:59,300 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 04:14:59,302 - WARNING - No such comm: 0d91f2f7-653a-4609-a7d2-467b6c94bbe3
+2025-10-07 04:14:59,302 - DEBUG - Current comms: []
+2025-10-07 04:14:59,308 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 04:14:59,311 - WARNING - No such comm: bce731fe-0d2b-4c56-8ff8-e25435da68a0
+2025-10-07 04:14:59,311 - DEBUG - Current comms: []
+2025-10-07 06:18:27,248 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 06:18:27,250 - WARNING - No such comm: 0f46c45b-938b-4a73-9658-671e23da236b
+2025-10-07 06:18:27,250 - DEBUG - Current comms: []
+2025-10-07 06:18:27,286 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 06:18:27,289 - WARNING - No such comm: 1ec340dc-b35e-4436-a657-2af4d307dd80
+2025-10-07 06:18:27,289 - DEBUG - Current comms: []
+2025-10-07 07:19:38,051 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 07:19:38,054 - WARNING - No such comm: 77990335-2043-40d4-a504-c3219cf92c53
+2025-10-07 07:19:38,054 - DEBUG - Current comms: []
+2025-10-07 07:19:38,060 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 07:19:38,063 - WARNING - No such comm: 00004e0c-8238-4c6d-8e9e-1bb2827d07b6
+2025-10-07 07:19:38,063 - DEBUG - Current comms: []
+2025-10-07 08:21:02,487 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 08:21:02,490 - WARNING - No such comm: e57e5992-d7a5-4e3f-b5e4-06bd09f7d006
+2025-10-07 08:21:02,491 - DEBUG - Current comms: []
+2025-10-07 08:21:02,753 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 08:21:02,763 - WARNING - No such comm: 6bcdbc73-b3ef-4225-ae34-f6b8dfe36a79
+2025-10-07 08:21:02,763 - DEBUG - Current comms: []
+2025-10-07 08:22:17,291 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 08:22:17,293 - WARNING - No such comm: a402bec9-1b32-4b6e-b826-924d662b19d1
+2025-10-07 08:22:17,293 - DEBUG - Current comms: []
+2025-10-07 08:22:19,279 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 08:22:19,281 - WARNING - No such comm: 5483a322-4443-4496-9750-0e627a50b4f6
+2025-10-07 08:22:19,281 - DEBUG - Current comms: []
+2025-10-07 08:23:00,277 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 08:23:00,280 - WARNING - No such comm: c22ba62c-658e-45e2-8c4d-bc5540721063
+2025-10-07 08:23:00,280 - DEBUG - Current comms: []
+2025-10-07 08:23:04,266 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 08:23:04,270 - WARNING - No such comm: 4f480e61-adac-4571-b045-13212dad6899
+2025-10-07 08:23:04,270 - DEBUG - Current comms: []
+2025-10-07 15:29:34,297 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 15:29:34,303 - WARNING - No such comm: 08d0d1f0-b737-44d0-bfbb-a2eeda19a630
+2025-10-07 15:29:34,303 - DEBUG - Current comms: []
+2025-10-07 15:29:35,299 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 15:29:35,302 - WARNING - No such comm: c788636c-8be3-487f-a35a-74937ff2ddf1
+2025-10-07 15:29:35,302 - DEBUG - Current comms: []
+2025-10-07 15:42:15,358 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 15:42:15,363 - WARNING - No such comm: 3f2380ea-6707-4ef3-aa64-8ff49d4c07e0
+2025-10-07 15:42:15,363 - DEBUG - Current comms: []
+2025-10-07 15:42:15,368 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 15:42:15,371 - WARNING - No such comm: 286e9b2f-91a3-4812-8059-716f0311b3e5
+2025-10-07 15:42:15,371 - DEBUG - Current comms: []
+2025-10-07 22:16:31,838 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 22:16:32,384 - WARNING - No such comm: 281c6914-515e-4b5d-9f3a-1caa92ec12c6
+2025-10-07 22:16:32,385 - DEBUG - Current comms: []
+2025-10-07 22:16:32,454 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-07 22:16:32,464 - WARNING - No such comm: e94ac283-f000-41c1-a764-da672ba08017
+2025-10-07 22:16:32,465 - DEBUG - Current comms: []
+2025-10-08 00:44:58,498 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 00:44:58,504 - WARNING - No such comm: abb6a365-99fb-4f5f-a754-1443bd6f5d5b
+2025-10-08 00:44:58,504 - DEBUG - Current comms: []
+2025-10-08 00:44:58,552 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 00:44:58,555 - WARNING - No such comm: b123646a-6375-41b4-9222-3e974f886771
+2025-10-08 00:44:58,556 - DEBUG - Current comms: []
+2025-10-08 01:09:22,547 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 01:09:22,551 - WARNING - No such comm: 6a57cc8c-2544-433c-b05e-4abc5074d8ba
+2025-10-08 01:09:22,552 - DEBUG - Current comms: []
+2025-10-08 01:09:22,564 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 01:09:22,568 - WARNING - No such comm: 445107e4-5871-4f8c-9247-4fd658d2c83d
+2025-10-08 01:09:22,569 - DEBUG - Current comms: []
+2025-10-08 03:39:06,620 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 03:39:06,627 - WARNING - No such comm: 646d8a80-3e4b-480c-9eb9-de3fc0846b8f
+2025-10-08 03:39:06,628 - DEBUG - Current comms: []
+2025-10-08 03:39:06,932 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 03:39:06,935 - WARNING - No such comm: 50e33713-fb11-47a1-8cf1-46b7ab397cb8
+2025-10-08 03:39:06,936 - DEBUG - Current comms: []
+2025-10-08 13:27:27,473 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 13:27:27,505 - WARNING - No such comm: 270c3a32-0b8a-4606-ac2f-5043e332fa9c
+2025-10-08 13:27:27,505 - DEBUG - Current comms: []
+2025-10-08 13:27:27,511 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 13:27:27,513 - WARNING - No such comm: 81a017cc-c3da-4da5-863c-3ada5357c5bc
+2025-10-08 13:27:27,513 - DEBUG - Current comms: []
+2025-10-08 14:06:45,579 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 14:06:45,582 - WARNING - No such comm: df1c9862-549e-4135-aa9d-fabb9bcb664d
+2025-10-08 14:06:45,583 - DEBUG - Current comms: []
+2025-10-08 14:06:53,613 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 14:06:53,617 - WARNING - No such comm: 34a161fa-9e3c-4642-87ae-872bfe8bd835
+2025-10-08 14:06:53,618 - DEBUG - Current comms: []
+2025-10-08 21:48:38,501 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 21:48:38,537 - WARNING - No such comm: 268a541c-7165-476c-9fe3-eb1273fa9ee9
+2025-10-08 21:48:38,537 - DEBUG - Current comms: []
+2025-10-08 21:48:38,543 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 21:48:38,545 - WARNING - No such comm: e6a17a51-a9ce-4abd-ac43-411e3a1f23ff
+2025-10-08 21:48:38,546 - DEBUG - Current comms: []
+2025-10-08 22:45:41,468 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 22:45:41,471 - WARNING - No such comm: 2d3885d8-7af4-4c64-8a06-3b40998fc862
+2025-10-08 22:45:41,472 - DEBUG - Current comms: []
+2025-10-08 22:45:41,477 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-08 22:45:41,480 - WARNING - No such comm: f698d199-bc40-4235-bf0a-ba93a37dba4e
+2025-10-08 22:45:41,480 - DEBUG - Current comms: []
+2025-10-09 04:19:21,599 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 04:19:21,603 - WARNING - No such comm: 242e51c2-362f-4ac8-be23-7558000deadc
+2025-10-09 04:19:21,604 - DEBUG - Current comms: []
+2025-10-09 04:19:22,601 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 04:19:22,604 - WARNING - No such comm: 4d1d73c4-d5d2-4d49-a814-e31d082a1086
+2025-10-09 04:19:22,604 - DEBUG - Current comms: []
+2025-10-09 12:02:46,826 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:02:46,834 - WARNING - No such comm: 6e1c518d-bbe4-44ad-b487-63161ddc46d0
+2025-10-09 12:02:46,834 - DEBUG - Current comms: []
+2025-10-09 12:02:46,861 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:02:46,863 - WARNING - No such comm: 977b03a0-ddd1-4376-96e5-cd02bd1dee2a
+2025-10-09 12:02:46,863 - DEBUG - Current comms: []
+2025-10-09 12:17:40,786 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:17:40,788 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:17:40,790 - WARNING - No such comm: acd3505a-ebfd-4a94-9300-863857df7c1f
+2025-10-09 12:17:40,791 - DEBUG - Current comms: []
+2025-10-09 12:17:40,793 - WARNING - No such comm: 70486440-18c0-4aca-8a62-6c72d12b2e99
+2025-10-09 12:17:40,793 - DEBUG - Current comms: []
+2025-10-09 12:18:11,577 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:18:11,579 - WARNING - No such comm: b68c8cdf-187a-49ad-8528-f86eb2bee098
+2025-10-09 12:18:11,580 - DEBUG - Current comms: []
+2025-10-09 12:18:25,614 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:18:25,616 - WARNING - No such comm: 4ad63d03-8c4b-4553-a9c9-9d75fb2a17d5
+2025-10-09 12:18:25,617 - DEBUG - Current comms: []
+2025-10-09 12:23:27,206 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:23:27,210 - WARNING - No such comm: e9b967db-4ce1-4345-a424-457b988cb221
+2025-10-09 12:23:27,211 - DEBUG - Current comms: []
+2025-10-09 12:23:27,216 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 12:23:27,219 - WARNING - No such comm: 2d813045-1326-4a12-b2fd-ae3082ef08b9
+2025-10-09 12:23:27,220 - DEBUG - Current comms: []
+2025-10-09 14:01:16,356 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 14:01:16,398 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 14:01:16,411 - WARNING - No such comm: ff12f575-0b59-4b48-8fdd-13cf5f2f2425
+2025-10-09 14:01:16,418 - DEBUG - Current comms: []
+2025-10-09 14:01:16,428 - WARNING - No such comm: bf5c0c55-36ac-4054-9c34-8788c7b98da0
+2025-10-09 14:01:16,428 - DEBUG - Current comms: []
+2025-10-09 14:30:24,408 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 14:30:24,417 - WARNING - No such comm: 1d34f8a9-afa9-47f6-bc33-6e5546f2c167
+2025-10-09 14:30:24,419 - DEBUG - Current comms: []
+2025-10-09 14:30:24,658 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 14:30:24,661 - WARNING - No such comm: a3f9e450-9a2d-4328-8ef0-7c9d602ef136
+2025-10-09 14:30:24,662 - DEBUG - Current comms: []
+2025-10-09 15:10:30,273 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 15:10:30,276 - WARNING - No such comm: 25438883-10d1-4a0e-986d-9b360e1aff24
+2025-10-09 15:10:30,277 - DEBUG - Current comms: []
+2025-10-09 15:10:32,074 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 15:10:32,081 - WARNING - No such comm: 2c7e096c-d38b-44af-a813-9048262076b0
+2025-10-09 15:10:32,081 - DEBUG - Current comms: []
+2025-10-09 15:24:25,601 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 15:24:25,604 - WARNING - No such comm: 7fae517b-3688-4a56-aabb-db2dde26526f
+2025-10-09 15:24:25,605 - DEBUG - Current comms: []
+2025-10-09 15:24:28,590 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 15:24:28,593 - WARNING - No such comm: 9caf6585-5154-4bdf-86a3-299842a26522
+2025-10-09 15:24:28,593 - DEBUG - Current comms: []
+2025-10-09 17:06:15,867 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 17:06:15,872 - WARNING - No such comm: 6721a2af-b88f-49a7-a502-bccd70328bf4
+2025-10-09 17:06:15,873 - DEBUG - Current comms: []
+2025-10-09 17:06:16,975 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-09 17:06:16,978 - WARNING - No such comm: d6d0ffb0-3eb9-4d72-afba-2bc42d52cd87
+2025-10-09 17:06:16,978 - DEBUG - Current comms: []
+2025-10-15 17:32:56,683 - INFO - Creating Vendor Summary Table.....
+2025-10-15 17:34:33,727 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750                 145080   
+1          23.19        28.99   1750                 164038   
+2          18.24        24.99   1750                 187407   
+3          16.17        22.99   1750                 201682   
+4          21.89        29.99   1750                 138109   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0        672819.31       260999.20     68601.68  
+1        561512.37       294438.66    144929.24  
+2        461140.15       343854.07    123780.22  
+3        420050.01       368242.80    257032.07  
+4        545778.28       249587.83    257032.07  
+2025-10-15 17:34:33,737 - INFO - Cleaning Data.....
+2025-10-15 17:35:38,537 - INFO - Creating Vendor Summary Table.....
+2025-10-15 17:36:05,980 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750                 145080   
+1          23.19        28.99   1750                 164038   
+2          18.24        24.99   1750                 187407   
+3          16.17        22.99   1750                 201682   
+4          21.89        29.99   1750                 138109   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0        672819.31       260999.20     68601.68  
+1        561512.37       294438.66    144929.24  
+2        461140.15       343854.07    123780.22  
+3        420050.01       368242.80    257032.07  
+4        545778.28       249587.83    257032.07  
+2025-10-15 17:36:05,983 - INFO - Cleaning Data.....
+2025-10-15 17:38:39,232 - INFO - Creating Vendor Summary Table.....
+2025-10-15 17:39:02,370 - INFO -    VendorNumber                   VendorName  Brand              Description  \
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          26.27        36.99   1750                 145080   
+1          23.19        28.99   1750                 164038   
+2          18.24        24.99   1750                 187407   
+3          16.17        22.99   1750                 201682   
+4          21.89        29.99   1750                 138109   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0        672819.31       260999.20     68601.68  
+1        561512.37       294438.66    144929.24  
+2        461140.15       343854.07    123780.22  
+3        420050.01       368242.80    257032.07  
+4        545778.28       249587.83    257032.07  
+2025-10-15 17:39:02,373 - INFO - Cleaning Data.....
+2025-10-15 17:39:02,378 - INFO -    VendorNumber                VendorName  Brand              Description  \
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof   
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          26.27        36.99  1750.0                 145080   
+1          23.19        28.99  1750.0                 164038   
+2          18.24        24.99  1750.0                 187407   
+3          16.17        22.99  1750.0                 201682   
+4          21.89        29.99  1750.0                 138109   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0            3811251.60            142049.0         5101919.51   
+1            3804041.22            160247.0         4819073.49   
+2            3418303.68            187140.0         4538120.60   
+3            3261197.94            200412.0         4475972.88   
+4            3023206.01            135838.0         4223107.62   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0        672819.31       260999.20     68601.68  
+1        561512.37       294438.66    144929.24  
+2        461140.15       343854.07    123780.22  
+3        420050.01       368242.80    257032.07  
+4        545778.28       249587.83    257032.07  
+2025-10-15 17:39:02,381 - INFO - Ingesting data.....
+2025-10-15 17:39:02,448 - INFO - Completed
+2025-10-15 18:05:16,345 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-15 18:05:16,349 - WARNING - No such comm: 001d5c2c-b631-4e68-bdb7-8ecc155f66b6
+2025-10-15 18:05:16,349 - DEBUG - Current comms: []
+2025-10-15 19:12:44,121 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-15 19:12:44,128 - WARNING - No such comm: 782d9c20-670d-40fd-b378-9317a720b021
+2025-10-15 19:12:44,128 - DEBUG - Current comms: []
+2025-10-15 19:18:03,008 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-15 19:18:03,011 - WARNING - No such comm: 763a04e6-415a-4247-866b-ea0e9b9ff361
+2025-10-15 19:18:03,012 - DEBUG - Current comms: []
+2025-10-15 19:26:12,988 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-15 19:26:12,992 - WARNING - No such comm: 11714d3d-5d7b-4aa6-8105-21df69f04e57
+2025-10-15 19:26:12,993 - DEBUG - Current comms: []
+2025-10-15 20:26:52,025 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-15 20:26:52,037 - WARNING - No such comm: 0e030d0c-126f-43f8-a923-650f18c29c98
+2025-10-15 20:26:52,038 - DEBUG - Current comms: []
+2025-10-15 22:50:52,360 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-15 22:50:52,368 - WARNING - No such comm: 81110595-7d82-457c-8554-dbc605886fa6
+2025-10-15 22:50:52,369 - DEBUG - Current comms: []
+2025-10-16 00:45:59,828 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 00:45:59,834 - WARNING - No such comm: 4d52dc4f-ab8f-4ea0-91d7-1721b868fbca
+2025-10-16 00:45:59,835 - DEBUG - Current comms: []
+2025-10-16 00:46:58,978 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 00:46:58,983 - WARNING - No such comm: 974f0b14-108b-4a7b-b2d5-54da8cbf9655
+2025-10-16 00:46:58,983 - DEBUG - Current comms: []
+2025-10-16 01:02:48,265 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 01:02:48,269 - WARNING - No such comm: d7b87ad9-d657-4b45-9aa2-071ef1a744ff
+2025-10-16 01:02:48,269 - DEBUG - Current comms: []
+2025-10-16 01:21:48,393 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 01:21:48,397 - WARNING - No such comm: 345f41e5-23c3-48a9-b0f5-e3c3109a3f34
+2025-10-16 01:21:48,397 - DEBUG - Current comms: []
+2025-10-16 03:17:08,098 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 03:17:08,102 - WARNING - No such comm: ec4635f9-5e88-48bc-98e0-621664434e6f
+2025-10-16 03:17:08,103 - DEBUG - Current comms: []
+2025-10-16 07:26:00,083 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 07:26:00,089 - WARNING - No such comm: 51f9f365-63c0-4cfb-8208-94a2d09e83e7
+2025-10-16 07:26:00,090 - DEBUG - Current comms: []
+2025-10-16 07:27:27,007 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 07:27:27,010 - WARNING - No such comm: edb9bdce-5a2d-48c9-85d3-644c1b89679b
+2025-10-16 07:27:27,010 - DEBUG - Current comms: []
+2025-10-16 13:13:27,624 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 13:13:27,628 - WARNING - No such comm: a4772b65-5fb3-4d3d-92bf-7b7aa4832804
+2025-10-16 13:13:27,628 - DEBUG - Current comms: []
+2025-10-16 14:29:25,992 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 14:29:25,998 - WARNING - No such comm: 6284cd08-e157-4fda-9736-83f1a5e7f909
+2025-10-16 14:29:25,999 - DEBUG - Current comms: []
+2025-10-16 15:54:38,048 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 15:54:38,054 - WARNING - No such comm: e9cfcc66-0925-4389-8c0e-9c9486114829
+2025-10-16 15:54:38,054 - DEBUG - Current comms: []
+2025-10-16 17:39:19,658 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 17:39:19,663 - WARNING - No such comm: df8501d6-eee2-472b-9c41-0a9ce426d420
+2025-10-16 17:39:19,663 - DEBUG - Current comms: []
+2025-10-16 17:57:32,298 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 17:57:32,300 - WARNING - No such comm: 78614a51-1e44-46a2-a6b5-3b9591b53ef1
+2025-10-16 17:57:32,301 - DEBUG - Current comms: []
+2025-10-16 19:07:27,987 - ERROR - No such comm target registered: jupyter.widget.control
+2025-10-16 19:07:28,006 - WARNING - No such comm: c10b999d-3815-4b0d-a151-67ffd3753f05
+2025-10-16 19:07:28,006 - DEBUG - Current comms: []
